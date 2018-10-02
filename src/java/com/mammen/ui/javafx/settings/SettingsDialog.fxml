@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<DialogPane fx:id="root" maxHeight="300.0" minHeight="200.0" prefHeight="300.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mammen.ui.javafx.dialog.SettingsDialogController">
+<DialogPane fx:id="root" maxHeight="300.0" minHeight="200.0" prefHeight="300.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mammen.ui.javafx.settings.SettingsDialogController">
    <content>
       <AnchorPane>
          <children>

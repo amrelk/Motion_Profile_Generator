@@ -1,4 +1,4 @@
-package com.mammen.ui.javafx.dialog;
+package com.mammen.ui.javafx.settings;
 
 import com.mammen.generator.ProfileGenerator;
 import com.mammen.ui.javafx.PropWrapper;
