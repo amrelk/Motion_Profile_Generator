@@ -20,23 +20,28 @@ public class PropWrapper {
                 propInstance = new Properties();
                 propFile = new File( APPDATA_DIR, PROP_NAME + ".properties" );
 
+                // If the properties file doesn't exist
                 if( !propFile.exists() )
                 {
+                    // Create .motion-profile-generator directory
                     APPDATA_DIR.mkdirs();
 
+                    // Create mpg.properties file
                     propFile.createNewFile();
 
-                    propInstance.put("ui.overlayImg", "");
-                    propInstance.put("ui.sourceDisplay", "2");
-                    propInstance.put("ui.csvType", "0");
-                    propInstance.put("ui.addWaypointOnClick", "false");
-                    propInstance.put("csv.avail", "Delta Time, X Point, Y Point, Position, Velocity, Acceleration, Jerk, Heading");
-                    propInstance.put("csv.chos", "null");
+                    // Add default properties to the file
+                    propInstance.put( "ui.overlayImg", "" );
+                    propInstance.put( "ui.sourceDisplay", "2" );
+                    propInstance.put( "ui.csvType", "0" );
+                    propInstance.put( "ui.addWaypointOnClick", "false" );
+                    propInstance.put( "csv.avail", "Delta Time, X Point, Y Point, Position, Velocity, Acceleration, Jerk, Heading" );
+                    propInstance.put( "csv.chos", "null" );
                 }
 
+                // Load properties from file
                 propInstance.load( new FileInputStream( propFile ) );
             }
-            catch (Exception e)
+            catch( Exception e )
             {
                 e.printStackTrace();
             }
